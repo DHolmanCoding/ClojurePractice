@@ -1,9 +1,10 @@
 (defn get-guess []
   (println "Rock, Paper, or Scissors?: (r)ock (p)aper (s)cissors")
   (let [guess (read-line)]
-    (if (get {"r" true "p" true "s" true} guess) guess)
-    )
+    (if (get {"r" true "p" true "s" true} guess)
+      guess)
   )
+)
 
 (defn winner [guess1 guess2]
   (let [guesses [guess1 guess2]]
